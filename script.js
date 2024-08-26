@@ -22,7 +22,7 @@ document.getElementById('annotateBtn').addEventListener('click', function() {
         { logger: m => console.log(m) }
     ).then(({ data: { text } }) => {
         console.log('Extracted Text:', text);
-        fetch('https://your-vercel-backend-url.com/api/annotate', {
+        fetch('https://test-backend-rosy-seven.vercel.app/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
