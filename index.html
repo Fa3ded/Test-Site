@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catch the Ball Game</title>
+    <title>Image to Text Annotations</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
-        <div class="basket"></div>
-        <div class="ball"></div>
-    </div>
+    <h1>Upload an Image to Get Annotations</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <div id="imagePreview"></div>
+    <button id="annotateBtn">Get Annotations</button>
+    <div id="output"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.0/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
